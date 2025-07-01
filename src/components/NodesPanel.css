@@ -1,0 +1,83 @@
+/* Nodes Panel Styles */
+.nodes-panel {
+  width: 250px;
+  background: white;
+  border-left: 1px solid #e2e8f0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-header {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.panel-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.panel-content {
+  padding: 16px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Node item in the panel */
+.node-item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  cursor: grab;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.node-item:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+  transform: translateY(-1px);
+}
+
+.node-item:active {
+  cursor: grabbing;
+  transform: translateY(0);
+}
+
+/* Node preview in the panel */
+.node-preview {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.node-icon {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+.node-label {
+  font-weight: 500;
+  color: #374151;
+  font-size: 14px;
+}
+
+.node-description {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+/* Drag feedback */
+.node-item.dragging {
+  opacity: 0.5;
+  transform: rotate(5deg);
+}
