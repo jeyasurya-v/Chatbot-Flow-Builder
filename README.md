@@ -4,7 +4,7 @@ A React-based visual flow builder for creating chatbot conversation flows using 
 
 ## 🚀 Live Demo
 
-[View Live Application](http://localhost:5173) *(Update this with your deployment URL)*
+[View Live Application](https://chatbot-flow-builder-ecru-kappa.vercel.app/)
 
 ## 📋 Features
 
